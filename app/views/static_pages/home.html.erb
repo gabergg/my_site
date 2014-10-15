@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gabe G'Sell</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="custom.css.scss">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper_full">
+
+  <div id="top_bar">
+    <ul>
+      <li class="selected top_button"><a href="#" title="biography_tab"><img id="me_pic"
+                                                                             src="<%= image_path('about_me.png') %>"/></a>
+      </li>
+      <li class="top_button"><a href="#" title="blog_tab"><img id="blog_pic" src="<%= image_path('blog.png') %>"/></a>
+      </li>
+      <li class="top_button">
+        <a href="#" title="portfolio_tab"><img id="resume_pic" src="<%= image_path('resume.png') %>"/></a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- top_bar -->
+
+  <div id="section_list">
+
+  </div>
+
+  <div id="blog_tab" class="content">
+
+  </div>
+  <!-- blog_tab -->
+
+  <div id="portfolio_tab" class="content">
+    <iframe src="https://docs.google.com/viewer?srcid=0B3WywHUuQcVqLUZ1dXU1eFVPXzA&pid=explorer&efh=false&a=v&chrome=false&border=none&embedded=true"
+            width="835px" height="1100px" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <!-- portfolio_tab -->
+
+  <div id="leaving_tab" class="content">
+  </div>
+  <!-- leaving_tab -->
+
+  <div id="biography_tab" class="content">
+
+    <div id="all_content">
+
+      <div class="content_row">
+        <div class="blurb">
+          <h2> Hi! I'm Gabe Grazier G'Sell.</h2>
+
+          <p>I was recently a software developer at Yahoo, where I worked on back-end mail.
+            I left my job to work on my startup called Linguistik. We just applied to YCombinator,
+            so we'll see how that goes. This is a site that I'll be messing with in order to play with different web
+            layouts and random graphics</p>
+        </div>
+        <!-- blurb -->
+      </div>
+
+      <div class="content_row">
+        <div class="blurb rightside">
+          <h2>
+            Come meet me at <br/> Coffee n' Beer.</h2>
+
+          <p> Recently, I've been hanging out a lot at coffeenbeer.com. This is a site that my girlfriend Jenn and I
+            built to track our road trip and software development progress. It includes a blog (gabeyoubum isn't very
+            active anymore), photos, and an interactive map on which you can track our route and join us. Head on over
+            and check out what's been going on!
+          </p>
+        </div>
+        <!-- blurb -->
+      </div>
+
+      <div class="content_row">
+        <div class="blurb">
+          <h2> I like learning new things. </h2>
+
+          <p> There is so much I want to learn. I'm constantly trying to improve on all sorts of things. I
+            love to meet and work with people, so feel free to reach out to me with ideas, questions, or
+            comments! Here is a nonexhaustive list of the things I'm actively trying to improve:
+          </p>
+          <ul>
+            <li>Graphic design</li>
+            <li>Web programming</li>
+            <li>Rails</li>
+            <li>Hbase</li>
+            <li>Guitar and piano playing</li>
+            <li>Song writing and music production</li>
+            <li>Vietnamese and Spanish</li>
+            <li>Cooking</li>
+            <li>Dota 2</li>
+          </ul>
+        </div>
+        <!-- blurb -->
+      </div>
+    </div>
+    <!-- all_content -->
+
+  </div>
+  <!-- biography_tab -->
+
+  <div id="travels_tab" class="content">
+    <p> Look where I've been!! </p>
+  </div>
+  <!-- travels_tab -->
+
+
+  <div id="contact_wrapper">
+
+    <div id="contact">
+
+      <div id="externals">
+        <ul>
+          <li><a target='_parent' href='http://www.linkedin.com/in/gabegsell' class='symbol'
+                 title='roundedlinkedin'></a></li>
+          <li><a target='_parent' href='http://www.soundcloud.com/gabergg' class='symbol'
+                 title='roundedsoundcloud'></a></li>
+          <li><a target='_parent' href='http://www.github.com/gabergg' class='symbol'
+                 title='roundedgithubalt'></a></li>
+          <li><a target='_parent' href='http://www.gabeyoubum.tumblr.com' class='symbol'
+                 title='roundedtumblr'></a></li>
+          <li><a target='_parent' href='http://www.facebook.com/gabe.gsell' class='symbol'
+                 title='roundedfacebook'></a></li>
+          <li><a target='_parent' href='http://www.flickr.com/photos/gabegsell' class='symbol'
+                 title='roundedflickr'></a></li>
+          <li><a target='_parent' href='http://www.twitter.com/GabeGSell' class='symbol'
+                 title='roundedtwitterbird'></a></li>
+        </ul>
+      </div>
+      <!-- externals -->
+
+    </div>
+    <!-- contact -->
+
+  </div>
+  <!-- contact_wrapper -->
+
+</div>
+<!-- wrapper_full -->
+
+<div id="copyright">
+  <hr width="75%">
+  <p>Copyright &copy; 2013-2014 gabegsell.com - All Rights Reserved
+
+  <p>
+</div>
+
+<!--
+<iframe src="http://gabeyoubum.tumblr.com" height="1500px" width="1000px" frameborder="0"></iframe>
+-->
+
+<script src="tabs.js"></script>
+<script src="offpage.js"></script>
+<script>
+    $('<iframe />').attr({src: 'http://gabeyoubum.tumblr.com', height: "1500px", width: "1000px", frameborder: "0"}).appendTo('#blog_tab');
+</script>
+
+
+</body>
+</html>
