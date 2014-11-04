@@ -39,15 +39,14 @@ a.symbol {
     text-decoration: none;
 }
 
-.vertical-center {
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
-
-    display: flex;
-    align-items: center;
+html, body, .container {
+    height: 100%;
 }
-
-.col-centered{
-    float: none;
-    margin: 0 auto;
+.container {
+    display: table;
+    vertical-align: middle;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
 }
