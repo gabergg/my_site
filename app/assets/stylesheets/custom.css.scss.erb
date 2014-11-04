@@ -49,7 +49,7 @@ html, body {
 }
 
 .container {
-    height: 85%;
+    height: 80%;
     display: table;
     vertical-align: middle;
 }
@@ -64,24 +64,19 @@ a:hover {
     text-decoration: none !important;
 }
 
-#navcontainer ul {
-    list-style-type: none;
-    margin: 30px 0px 0px 20px;
-    padding: 0;
-}
-
-#navcontainer ul li {
-    display: inline;
-    margin: 0 30px;
-    padding-bottom: 10px;
-}
-
-#navcontainer ul li a {
+.nav-element > a {
     font-weight: bold;
     font-size: 24px;
     color: $foreground-color;
 }
 
+.nav-element {
+    padding-bottom:10px;
+}
+
+#nav-container {
+    margin-top: 15px;
+}
 
 .activeNav {
     border-bottom: 3px solid $highlight-color;

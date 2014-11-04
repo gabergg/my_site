@@ -1,11 +1,13 @@
-<div id="navcontainer">
+<div id="nav-container">
   <div class="row-fluid text-center">
-    <!--<div class="col-xs-2 col-xs-offset-5 col-sm-4 col-sm-offset-4 text-center">-->
-      <ul>
-        <li class="<%= 'activeNav' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
-        <li class="<%= 'activeNav' if current_page?(projects_path) %>"><%= link_to "Projects", projects_path %></li>
-        <li class="<%= 'activeNav' if current_page?(resume_path) %>"><%= link_to "Resume", resume_path %></li>
-      </ul>
-    <!--</div>-->
+    <div class="col-xs-12 col-sm-2 col-sm-offset-3" style="margin-top:15px;">
+      <span class="nav-element <%= 'activeNav' if current_page?(root_path) %>"><%= link_to "Home", root_path %></span>
+    </div>
+    <div class="col-xs-12 col-sm-2" style="margin-top:15px;">
+      <span class="nav-element <%= 'activeNav' if current_page?(projects_path) %>"><%= link_to "Projects", projects_path %></span>
+    </div>
+    <div class="col-xs-12 col-sm-2" style="margin-top:15px;">
+      <span class="nav-element <%= 'activeNav' if current_page?(resume_path) %>"><%= link_to "Resume", resume_path %></span>
+    </div>
   </div>
 </div>
