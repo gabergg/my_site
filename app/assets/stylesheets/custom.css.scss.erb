@@ -1,6 +1,10 @@
+$background-color: #25224A;
+$foreground-color: #FFFAF0;
+$highlight-color: #ADE0F0;
+
 body {
-    background-color: #2F4F4F !important;
-    color: #FFFAF0 !important;
+    background-color: $background-color !important;
+    color: $foreground-color !important;
 }
 
 @font-face {
@@ -40,11 +44,12 @@ a.symbol {
     text-decoration: none;
 }
 
-html, body, .container {
+html, body {
     height: 100%;
 }
 
 .container {
+    height: 85%;
     display: table;
     vertical-align: middle;
 }
@@ -55,38 +60,9 @@ html, body, .container {
 }
 
 a:hover {
-    color: #4F2F2F !important;
+    color: $highlight-color !important;
     text-decoration: none !important;
 }
-/*
-.navbar .nav > li > a {
-    padding: 0 15px 10px;
-    font-family: 'Vollkorn', Georgia, Times, serif;
-    font-weight: 700 !important;
-}
-
-.navbar .nav > li > a:hover {
-    background-color: inherit;
-}
-
-#header-wrap {
-    background-color: inherit !important;
-    border: none !important;
-}
-
-ul.nav a:link, a:visited {
-    display: block;
-    //width: 130px;
-    font-weight: bold;
-    text-align: center;
-    //padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    &:hover {
-        text-decoration: none;
-    }
-}
-*/
 
 #navcontainer ul {
     list-style-type: none;
@@ -103,14 +79,14 @@ ul.nav a:link, a:visited {
 #navcontainer ul li a {
     font-weight: bold;
     font-size: 24px;
-    color: #FFFAF0;
+    color: $foreground-color;
 }
 
 
 .activeNav {
-    border-bottom: 3px solid #4F2F2F;
+    border-bottom: 3px solid $highlight-color;
 }
 
 .activeNav a {
-    color: #4F2F2F !important;
+    color: $highlight-color !important;
 }
