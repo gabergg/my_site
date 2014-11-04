@@ -1,0 +1,53 @@
+body {
+    background-color: #00ff00 !important;
+}
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: asset-url('MonoSocialIconsFont-1.10.eot');
+    src: asset-url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+    asset-url('MonoSocialIconsFont-1.10.woff') format('woff'),
+    asset-url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+    asset-url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: asset-url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    font-size: 420%;
+}
+
+a.symbol {
+    padding: 3px 5px 3px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
