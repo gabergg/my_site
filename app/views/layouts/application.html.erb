@@ -7,11 +7,12 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
 <body>
 
 <%= render 'layouts/header' %>
-<div class="container" style="margin-top: 4%; margin-bottom: 4%">
+<div class="container">
   <div class="row vertical-center-row">
     <div class="col-lg-12">
       <%= yield %>
