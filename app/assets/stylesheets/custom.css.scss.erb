@@ -1,5 +1,6 @@
 body {
-    background-color: #00ff00 !important;
+    background-color: #2F4F4F !important;
+    color: #FFFAF0 !important;
 }
 
 @font-face {
@@ -42,11 +43,74 @@ a.symbol {
 html, body, .container {
     height: 100%;
 }
+
 .container {
     display: table;
     vertical-align: middle;
 }
+
 .vertical-center-row {
     display: table-cell;
     vertical-align: middle;
+}
+
+a:hover {
+    color: #4F2F2F !important;
+    text-decoration: none !important;
+}
+/*
+.navbar .nav > li > a {
+    padding: 0 15px 10px;
+    font-family: 'Vollkorn', Georgia, Times, serif;
+    font-weight: 700 !important;
+}
+
+.navbar .nav > li > a:hover {
+    background-color: inherit;
+}
+
+#header-wrap {
+    background-color: inherit !important;
+    border: none !important;
+}
+
+ul.nav a:link, a:visited {
+    display: block;
+    //width: 130px;
+    font-weight: bold;
+    text-align: center;
+    //padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: none;
+    }
+}
+*/
+
+#navcontainer ul {
+    list-style-type: none;
+    margin: 30px 0px 0px 20px;
+    padding: 0;
+}
+
+#navcontainer ul li {
+    display: inline;
+    margin: 0 30px;
+    padding-bottom: 10px;
+}
+
+#navcontainer ul li a {
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFAF0;
+}
+
+
+.activeNav {
+    border-bottom: 3px solid #4F2F2F;
+}
+
+.activeNav a {
+    color: #4F2F2F !important;
 }

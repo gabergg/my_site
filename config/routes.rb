@@ -1,9 +1,9 @@
 MySite::Application.routes.draw do
   
   root 'static_pages#home'
-
-  match '/contact',    to: 'static_pages#contact', via: 'get'
+  
   match '/projects',     to: 'static_pages#projects', via: 'get'
+  match '/resume',    to: 'static_pages#resume', via: 'get'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

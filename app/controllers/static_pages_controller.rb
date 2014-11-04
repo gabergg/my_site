@@ -5,6 +5,6 @@ class StaticPagesController < ApplicationController
   def projects
   end
 
-  def contact
+  def resume
   end
 end
