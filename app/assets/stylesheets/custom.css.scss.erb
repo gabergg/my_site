@@ -1,6 +1,6 @@
-$background-color: #25224A;
-$foreground-color: #FFFAF0;
-$highlight-color: #ADE0F0;
+$background-color: #265B6A;
+$foreground-color: white;
+$highlight-color: #550C00;
 
 body {
     background-color: $background-color !important;
@@ -40,16 +40,15 @@ a.symbol:before {
 
 a.symbol {
     padding: 3px 5px 3px 5px;
-    color: white;
+    color: $foreground-color;
     text-decoration: none;
 }
 
-html, body {
-    height: 100%;
+html, body, .container{
+    height: 95%;
 }
 
 .container {
-    height: 80%;
     display: table;
     vertical-align: middle;
 }
